@@ -1,0 +1,13 @@
+/* General rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#myApp {
+    display: flex;
+    justify-content: center;
+    color: brown;
+    padding-top: 20px;
+}
