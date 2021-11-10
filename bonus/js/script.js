@@ -10,10 +10,12 @@ Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 var app = new Vue({
     el: '#myApp',
     data: {
+        cliccato: 1,
         message: 'Benvenuto VUE!!!',
         namePict: 'unsplashTest',
         image: 'https://unsplash.it/300/300?image=',
-        testHtml: `<ul><li>Ciao sono un elemento di una lista</li></ul>`
+        testHtml: `<ul><li>Ciao sono un elemento di una lista</li></ul>`,
+        testArray: ['mario', 'loris', 'adriano', 'simone']
     },
     methods: {
         test: function() {

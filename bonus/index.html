@@ -13,11 +13,21 @@
         <h1>
             {{ message }}
         </h1>
-        <img v-bind:src="image" :alt="namePict">
+        
         <div v-html="testHtml">
             {{ testHtml }}
         </div>
+
+            <ul>
+                <li v-for="(name, index) in testArray" :key="index">
+                   {{ name }}
+                </li>
+            </ul>
+
+        <button @click="cliccato++">{{ cliccato }}</button>
         <button @click="test">Cambia Immagine</button>
+
+        <img v-if="cliccato % 2 === 0" v-bind:src="image" :alt="namePict">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
